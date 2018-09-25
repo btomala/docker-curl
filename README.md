@@ -1,5 +1,5 @@
 # docker-curl
-Alpine-based image with just curl
+Alpine-based image with [curl](https://curl.haxx.se) and [jq](https://stedolan.github.io/jq/)
 
 ## Usage
 
@@ -10,7 +10,7 @@ $ docker run --rm appropriate/curl -fsSL https://www.google.com/
 ## Tags
 
 * `appropriate/curl:latest`: based on `alpine:latest`
-* `appropriate/curl:edge`: based on `alpine:edge`
+* `appropriate/curl:3.8`: based on `alpine:edge`
 
 ## License
 
