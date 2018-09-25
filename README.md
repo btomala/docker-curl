@@ -4,7 +4,7 @@ Alpine-based image with [curl](https://curl.haxx.se) and [jq](https://stedolan.g
 ## Usage
 
 ```console
-$ docker -e NO_OF_RETRY=3 -e ASSERT_ON_JSON_VALUE='"Up"' run --rm bartektomala/jq-curl \
+$ docker -e NO_OF_RETRY=3 -e ASSERT_ON_JSON_VALUE='"Up"' run --rm bartektomala/docker-jq-curl \
 "curl --retry 10 --retry-delay 0 --retry-connrefused http://localhost:8558/cluster/members | jq '.members | .[1] | .status'"
 ```
 
