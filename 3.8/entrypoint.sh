@@ -14,7 +14,7 @@ while [ $RETRY -gt $COUNTER ] || [ $FLAG -eq 0 ]
 			FLAG=0
 		fi
 		COUNTER=$((COUNTER+1))
-		sleep $((COUNTER))
+		sleep $((2 ** COUNTER))
 	done
 
 exit 1
